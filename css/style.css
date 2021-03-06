@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    padding: 1rem 1rem;
+    line-height: 1.5;
+    font-size: .75rem;
+}
+
+body{
+    max-width: 70rem;
+    margin: 1rem auto;
+    overflow-x: hidden;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+header{
+    margin-bottom: 1.5rem;
+}
+header h1{
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 2rem;
+    padding: .6rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+header .text {
+    display: flex;
+    align-items: flex-start;
+}
+
+header .text p{
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    color: #4F4F4F;
+    padding: 0 .3rem;
+    
+}
+header .text img{
+    width: 1rem;
+    padding: .5rem 0;
+}
+.main-image {
+    padding: 1.5rem 0;
+}
+.main-image img{
+    height: 13rem;
+    border-radius: 1rem;
+}
+
+.sidebar{
+    margin: 1.5rem 0;
+}
+.sidebar .header{
+    display: flex;
+    width: 31%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+ 
+}
+
+
+.sidebar .header .text .yellow{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: .8rem;
+    color: #F2994A;
+}
+
+
+.sidebar .body{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar .body .item{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 31%;
+    flex: none;
+}
+.sidebar .body .item .text,
+.sidebar .header .text{
+    width: 70%;
+}
+.sidebar .body .item .img,
+.sidebar .header .img{
+    width: 20%;
+    padding:  0 .3rem 0 0;
+    transform: scale(1.3);
+}
+.sidebar .body .text div:first-child, 
+.sidebar .text div:first-child{
+
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: #BDBDBD;
+    padding: .1rem 0;
+}
+.sidebar .body .text div{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: .9rem;
+    color: #333333;
+}
+
+.ingredients h2,
+.ingredients h1{
+    font-family: Playfair Display;
+    color: #333333;
+    padding: 1rem 0;
+}
+.ingredients h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.ingredients h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1rem;
+}
+.ingredient > div{
+    font-family: Montserrat;
+    color: #333333;
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem 0;
+    
+}
+.ingredient input{
+    display: block;
+    width: 31px;
+    height: 31px;   
+    flex: none;
+    margin-right: 1rem;
+}
+.ingredient label{
+    display: block;
+}
+
+.instructions{
+    padding: 1.5rem 0;
+ 
+}
+.instructions h1{
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333333;
+    padding: 1rem 0;
+}
+.instructions > div{
+    display: flex;
+    padding: 1rem 0;
+}
+
+.instructions .number{
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    flex: none;
+    margin-right: 1rem;
+    color: #FFFFFF;
+    background: #F2994A;
+    border-radius: 6px;
+
+    
+}
+
+.instructions > div div:last-child{
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+.src{
+    padding: 1rem 0;
+    font-family: Montserrat;
+    font-style: italic;
+    font-size: .8rem;
+    word-wrap: break-word;
+    color: #BDBDBD;
+}
+
+footer{
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: .9rem;
+    color: #828282;
+    padding: 2rem 0;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+@media all and (min-width : 1024px){
+    html{
+       
+        font-size: 1rem;
+    }
+    .main{
+      
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+     }
+
+    .sidebar{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        width: 16.5rem;
+        flex: none;
+        height: 23rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+     }
+
+    .sidebar .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sidebar .body .item,
+    .sidebar .header{
+        width: 9rem;
+        margin: 0 auto;
+        flex: none;
+        padding: 1rem 0;
+        align-items: center;
+  
+    }
+
+    .ingredients, .instructions{
+        width: 80%;
+    }
+
+
+}
+
